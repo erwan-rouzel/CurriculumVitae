@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+
+\usepackage[francais]{babel} 
+\usepackage[utf8]{inputenc}  %% les accents dans le fichier.tex
+\usepackage[T1]{fontenc}       %% Pour la césure des mots accentués
+\usepackage[paper=a4paper,textwidth=160mm]{geometry}
+\usepackage{graphicx}
+\usepackage{extsizes}
+\usepackage{wasysym}
+\usepackage{url}                % citer des adresses électroniques et des URL
+\usepackage{vmargin}            % redéfinir les marges
+\setmarginsrb{1cm}{1cm}{1cm}{1cm}{0cm}{0cm}{0cm}{0cm}
+
+\pagenumbering{gobble}
+
+\newif\ifquoteopen
+\catcode`\"=\active % lets you define `"` as a macro
+\DeclareRobustCommand*{"}{%
+   \ifquoteopen
+     \quoteopenfalse ''% 
+   \else
+     \quoteopentrue ``%
+   \fi
+}
+
+\begin{document}
+
+\begin{center}
+\par\textbf{\LARGE References}\\
+\large{Erwan Rouzel - Software Engineer}
+\end{center}
+\vspace{0.5cm}
+\noindent \textbf{Eric Salomon} -- \textit{Release Introduction Manager},  Alcatel-Lucent\hfill
+\phone\hspace{0.2cm} +33 6 25 18 11 90
+\\\\
+2003 -- 2004 (as Software Engineer - Junior):\\
+-- Design and development of a mobile network architecture tool\\
+-- Teamwork in an international context (regular communication in English)
+\\\\
+\noindent "I had the pleasure to get Erwan in my team from Sept 2003 to June 2004, as internship for his last and graduation year from ENST Bretagne. Erwan has then been working full time in Alcatel as software development engineer, and participated to the development of a telecom network architecture management tool, showing not only very good programming skills, but also the ability to fully integrate an international team spread across France and Romania. His curiosity and creativity has both proved to be a definitive asset in order to get the right network architecture that was needed at that time."
+
+\begin{center}
+\line(1,0){250}
+\end{center}
+
+\noindent \textbf{Jean-François Pillet} -- \textit{CEO},  Efficience Multimedia\hfill\phone\hspace{0.2cm} +33 1 44 61 06 06\\\\
+2009 -- 2011 (as Software Engineer - Freelance) :\\
+-- Design and development of the Veolia Environnement new website\\
+-- Project management for the new website of Réseaux Ferrés de France\\
+\\
+"I had the occasion to work with Erwan on several complex projects in term of project management and he has always been able to show great attention in the following up and a positive mindset, which comes to enrich his technical expertise."
+
+\begin{center}
+\line(1,0){250}
+\end{center}
+
+\noindent \textbf{Arnaud Louvet} -- \textit{CEO},  Voyelle\hfill
+\phone\hspace{0.2cm} +33 2 30 96 07 63\\\\
+2010 -- 2011 (as Software Engineer - Freelance) :\\
+-- Technical training of a team of developpers\\
+-- Migration of date for the new version of website "Portail de l'Innovation de la Bretagne"\\\\
+"Erwan has accompanied us for a major project by providing training and developments for eZ Publish technology. Both for pedagogy and development he was mastering his subject."
+
+\begin{center}
+\line(1,0){250}
+\end{center}
+
+\noindent \textbf{Alain Mathieu} -- \textit{CEO},  Brain\hfill
+\phone\hspace{0.2cm} +33 6 60 70 96 27
+\\\\
+2011 -- 2012 (as Software Engineer - Freelance) :\\
+-- Migration of the website apec.fr to the new version\\
+-- Conception and developpement of an import / export tool
+\\\\
+"I was delighted to work with Erwan who worked for our client APEC as part of a migration in a complex environment."
+\begin{center}
+\line(1,0){250}
+\end{center}
+
+\end{document}
